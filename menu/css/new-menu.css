@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation{
+    height: 10rem;
+    background: #30efbf;
+}
+.logo__image{
+    height: 4rem;
+}
+.menu{
+    list-style: none;
+}
+.menu__link{
+    text-decoration: none;
+}
