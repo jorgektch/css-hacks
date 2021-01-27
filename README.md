@@ -1,2 +1,2 @@
 # CSS Hacks
-Fun web projects built with CSS only
+Fun web projects built with CSS only.
