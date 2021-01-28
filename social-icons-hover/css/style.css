@@ -1,0 +1,16 @@
+/* Social icons */
+.social a {
+    color:rgba(0,0,0,1);
+}
+.social:hover li a {
+    color:rgba(0,0,0,0.5);
+}
+.social:hover li a img {
+    opacity:0.5;
+}
+.social ul li a:hover {
+    color:rgba(0,0,0,1);
+}
+.social ul li a:hover > img {
+    opacity:1;
+}
