@@ -1,0 +1,64 @@
+:root{
+    --dark-theme-color-primary: #003050;
+    --dard-theme-color-seconday: #00a5b6;
+    --color-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /*border: solid 1px red;*/
+}
+
+html {
+    font-size: 16px;
+}
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hamburger only CSS */
+.hamburger {
+    background-color: var(--dark-theme-color-primary);
+    font-size: 0.25rem;
+    height: 10em;
+    width: 10em;
+}
+
+.hamburger__top {
+    background-color: var(--color-white);
+    height: 2em;
+    width: 8em;
+    border-radius: 1em;
+    position: relative;
+    left: 2em;
+    transition-duration: 0.5s;
+}
+.hamburger__space {
+    height: 2em;
+}
+.hamburger__middle {
+    background-color: var(--color-white);
+    height: 2em;
+    border-radius: 1em;
+    transition-duration: 0.5s;
+}
+.hamburger__bottom {
+    background-color: var(--color-white);
+    height: 2em;
+    border-radius: 1em;
+    width: 8em;
+    transition-duration: 0.5s;
+}
+
+
+#toggle:checked ~ * .hamburger__top {
+    transform: translate(-0.3em, 3.3em) rotate(135deg);
+}
+#toggle:checked ~ * .hamburger__middle {
+    transform: rotate(45deg);
+}
+#toggle:checked ~ * .hamburger__bottom {
+    transform: translate(0.3em, -3.3em) rotate(135deg);
+}
