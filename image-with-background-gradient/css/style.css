@@ -1,0 +1,24 @@
+:root{
+    --dark-theme-color-primary: #021019;
+    --dark-theme-color-secondary: #08304B;
+    --color-white: #ffffff;
+
+    --size-cover-height: 40rem;
+    --size-cover-width: 40rem;
+
+}
+body {
+    border: 1px solid red;
+}
+.image-container {
+    background-color: var(--dark-theme-color-primary);
+    height: var(--size-cover-height);
+    width: var(--size-cover-width);
+    border: 1px solid red;
+}
+.image-source {
+    height: auto;
+    width: 100%;
+    border: 1px solid red;
+    padding: auto;
+}
