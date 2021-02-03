@@ -1,0 +1,50 @@
+body{
+    font-size: 16px;
+    color: white;
+}
+
+#section__x{
+    background-color: #021019;
+}
+.section__body {
+    width: 50%;
+    border: solid 1px red;
+}
+.knowledge__list {
+    border: solid 1px red;
+}
+.knowledge__item {
+    height: 1.5rem;
+    padding: 0 0.75rem 0 0.75rem;
+    margin: 0 0.25rem 0.5rem 0;
+    border-radius: 1.5rem;
+
+    border: none;
+    background-color: #08304B;
+    color: white;
+
+    outline: none;
+}
+.knowledge__item:hover {
+    background-color: white;
+    color: #021019;
+
+    cursor: pointer;
+}
+
+
+.superpower__list {
+    list-style: none;
+    
+    height: 20rem;
+    width: 20rem;
+
+    border: solid 1px red;
+
+    padding: 0;
+}
+.superpower__item {
+    display: inline-block;
+
+    border: solid 1px red;
+}
