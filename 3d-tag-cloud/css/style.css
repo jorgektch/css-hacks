@@ -1,29 +1,88 @@
-body{
-    font-size: 16px;
-    color: white;
+:root{
+    --dark-theme-color-primary: #021019;
+    --dark-theme-color-secondary: #08304B;
+    --color-white: #ffffff;
+
+    --size-header-height: 6rem;
+    --size-logo-heigh: 4rem;
+
+    --font-family-title: 'Ubuntu Mono';
+    --font-family-content: 'Ubuntu';
+
+    --font-size-header: 1.5rem;
+    --font-size-header-mobile: 2rem;
+    --font-size-title-big: 3.2em;
+    --font-size-title: 2em;
+    --font-size-content: 1.25rem;
+    --font-size-footer: 1rem;
 }
+
+/* Fonts */
+@font-face {
+    font-family: 'Ubuntu';
+    src: local('Ubuntu'),
+    local('Ubuntu Regular'),
+    local('Ubuntu-Regular'),
+    url('fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Ubuntu Mono';
+    src: local('Ubuntu Mono'),
+    local('UbuntuMono Regular'),
+    local('UbuntuMono-Regular'),
+    url('fonts/UbuntuMono/UbuntuMono-Regular.ttf') format('truetype');
+}
+
+/* Normalize */
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-content);
+    color: var(--color-white);
+    /*border: solid 1px red;*/
+}
+html{
+    font-size: 16px;
+}
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.section__container {
+    padding: 4% 8%;
+}
+
 
 #section__x{
     background-color: #021019;
 }
 .section__body {
-    width: 50%;
-    border: solid 1px red;
+    /*border: solid 1px red;*/
+
+    display: flex;
+    flex-direction: row;
+    
 }
 .knowledge__list {
-    border: solid 1px red;
+    /*border: solid 1px red;*/
+    flex: 40%;
+    margin: auto;
 }
 .knowledge__item {
-    height: 1.5rem;
-    padding: 0 0.75rem 0 0.75rem;
-    margin: 0 0.25rem 0.5rem 0;
-    border-radius: 1.5rem;
+    height: calc(var(--font-size-content)*2);
+    padding: 0 calc(var(--font-size-content)*1) 0 calc(var(--font-size-content)*1);
+    margin: 0 calc(var(--font-size-content)*0.5) calc(var(--font-size-content)*0.5) 0;
+    border-radius: var(--font-size-content);
 
     border: none;
     background-color: #08304B;
     color: white;
 
     outline: none;
+
+    font-size: var(--font-size-content);
 }
 .knowledge__item:hover {
     background-color: white;
@@ -32,7 +91,7 @@ body{
     cursor: pointer;
 }
 
-
+/*
 .superpower__list {
     list-style: none;
     
@@ -47,4 +106,32 @@ body{
     display: inline-block;
 
     border: solid 1px red;
+}
+*/
+
+#myCanvasContainer{
+    flex: 60%;
+    /*border: solid 1px red;*/
+   
+    
+}
+
+canvas{
+    /*border: solid 1px red;*/
+    width: 80%;
+    height: auto;
+    padding: 0;
+    margin: auto;
+    display: block;
+    
+}
+
+#tags {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .section__body{
+        flex-direction: column;
+    }
 }
